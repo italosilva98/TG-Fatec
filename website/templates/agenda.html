@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section id="schedule" class="section-padding bg-gray">
+
+        <div class="schedule-display">
+                <p>Agende sua consulta!</p>
+        </div>
+        <div class="container">
+                <!-- Widget em linha do Calendly - início -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/italosilvestre4546/60min"
+                        style="position: relative;min-width:320px;height:750px;"></div>
+                <script src="{% static 'js/calendly.js' %}"></script>
+
+                <!-- Widget em linha do Calendly - fim -->
+
+        </div>
+</section>
+
+{% include 'footer.html' %}
+{% endblock %}

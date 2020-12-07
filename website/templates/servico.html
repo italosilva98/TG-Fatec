@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<section id="service" class="section-padding bg-gray">
+
+    <div class="contact-display">
+        <p>Serviços Prestados</p>
+    </div>
+    <div class="container">
+        <div class="container-services">
+            {% for s in services %}
+            <div class="card-services">
+                <div class="card-icon">
+                    <span class="{{ s.icone }}"></span>
+                </div>
+                <h2 style="font-size:18px;">{{ s.title }}</h2>
+
+                <div class="card-text"></div>
+                <p>{{ s.description }}</p>
+
+            </div>
+            {% endfor %}
+
+
+        </div>
+    </div>
+
+
+</section>
+
+{% include 'footer.html' %}
+{% endblock %}

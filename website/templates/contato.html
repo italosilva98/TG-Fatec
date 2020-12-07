@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+<section id="contact" class="section-padding bg-gray">
+
+
+  <div class="contact-display">
+    <p>Contate-nos</p>
+  </div>
+  <div class="container">
+    <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
+      <div class="col-lg-7 col-md-12 col-sm-12">
+        <div class="contact-block">
+          <form id="contato" method="post" action="{% url 'index' %}">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control border-text" id="nome" name="nome" placeholder="Nome" required
+                    data-error="Por favor, informe seu nome">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" placeholder="E-mail" id="email" class="form-control border-text" name="email"
+                    required data-error="Por favor, informe seu e-mail">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="text" placeholder="Assunto" name="assunto" id="assunto" class="form-control border-text"
+                    required data-error="Por favor, informe o assunto">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea class="form-control border-text" id="mensagem" placeholder="Mensagem" name="mensagem"
+                    rows="7" data-error="Por favor, escreva a mensagem" required></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="submit-button text-left">
+                  <button class="btn btn-common" id="form-submit" type="submit">Enviar Mensagem</button>
+                  <div id="msgSubmit" class="h3 text-center hidden"></div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12 col-xs-12 contact-adress">
+        <div class="wpb_wrapper text-contact-adress">
+          {% for c in contatos %}
+          <p><i class="fa fa-phone"></i> {{c.telefone1}}<br></p>
+          <p> <i class="fa fa-whatsapp"></i> {{c.telefone2}}<br></p>
+          <p><i class="fa fa-envelope"></i> {{c.email}}<br></p>
+          <p> <i class="fa fa-skype"></i> <a href="skype:Seu Skype Aqui">{{c.skype}}</a></p>
+          <p><i class="fa fa-map-marker"></i> Rua Exemplo, 999<br>
+            Centro – São Paulo – SP<br>
+            12000-000</p>
+          {%endfor%}
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+{% include 'footer.html' %}
+{% endblock %}

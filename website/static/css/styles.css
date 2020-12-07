@@ -1,0 +1,233 @@
+.home-container {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.home-content-img {
+    background-image: url('../img/dog1.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 550px;
+}
+
+.home-container-img img {
+    max-width: 300px;
+}
+
+.home-footer-img img {
+    max-width: 230px;
+}
+
+.home-content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50%);
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #425563;
+    width: 95%;
+    margin: auto;
+    height: auto;
+    margin-bottom: 30px;
+    
+    
+}
+
+.home-text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+
+
+.home-text p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #425563;
+    
+}
+
+
+.content-one {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 450px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+.content-two {
+    background-color: #fff;
+    height: 450px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content-two p, h5 {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #425563;
+}
+
+.content-three {
+    background-image: url('../img/mulher2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 380px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.content-four {
+    background-color: #fff;
+    border-left: 10px;
+    height: 380px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+.content-four p, h5 {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #425563;
+    
+}
+
+
+.contact-container {
+    background-color: #FFF;
+}
+
+.contact-display {
+    margin-top: 50px;
+    background-color: #425563;
+    margin-bottom: 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #425563;
+    box-shadow: 0px 0px 50px #425563;
+    
+}
+
+.contact-display p {
+    margin: 0;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.contact-adress {
+    border-left-style: groove;
+}
+
+.text-contact-adress p {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.schedule-display {
+    margin-top: 50px;
+    background-color: #425563;
+    margin-bottom: -15px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #425563;
+    box-shadow: 0px 0px 50px #425563;
+}
+
+.schedule-display p {
+    margin: 0;
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    justify-content: space-between;
+    
+}
+
+.card-services {
+    background-color: #FFF;
+    margin-bottom: 50px;
+    height: 250px;
+    padding: 20px 20px 20px 20px;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #425563;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #425563;
+}
+
+.card-services p, h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+}
+
+.card-icon {
+    color: #2f5242;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.card-services:hover {
+    box-shadow: 0px 0px 5px #425563;
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+
+.card-text {
+    border-bottom: solid 1px #425563;
+    margin-top: 10px;
+}
+
+.border-text {
+    border: solid 1px #425563;
+}
+
+.fieldset-border {
+  border-top: 2px groove #ddd !important;
+  padding: 1.4em 1.4em 1.4em 1.4em !important;
+  margin: 1.5em 1.5em 1.5em 1.5em !important;
+  -webkit-box-shadow: 0px 0px 0px 0px #000;
+  box-shadow: 0px 0px 0px 0px #000;
+
+  
+}
+
+.fieldset-border .legend-border {
+  text-align: center !important;
+  width: auto;
+  padding: 0 10px;
+ 
+}
+
+.fieldset-border .legend-border p {
+    font-size: 25px !important;
+    color: #425563;
+    font-weight: bold;
+  }

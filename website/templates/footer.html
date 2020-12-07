@@ -1,0 +1,75 @@
+{% load static %}
+{% block content %}
+
+<footer id="footer" class="footer-area section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+        <div class="widget home-footer-img">
+          <h3 class="footer-logo"><img src="{% static './img/Capturar.PNG' %}" alt=""></h3>
+          <div class="textwidget">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt est, et euismod purus
+              suscipit quis.</p>
+          </div>
+          <div class="social-icon">
+            <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
+            <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
+            <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
+            <a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <h3 class="footer-titel">Psicóloga Responsável</h3>
+        <ul class="footer-link">
+          <li><a href="#">Mariana Hildebrand</a></li>
+          <li><a href="#">CRP: 00/0000</a></li>
+          <li><a href="{% url 'servico' %}">Serviços</a></li>
+          <li><a href="{% url 'agenda' %}">Agendar Consulta</a></li>
+
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <h3 class="footer-titel">Contato</h3>
+        <ul class="address">
+          {% for c in contatos %}
+          <li>
+            <a href="#"><i class="fa fa-phone"></i> {{c.telefone1}}</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-whatsapp"></i> {{c.telefone2}}</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-envelope"></i> {{c.email}}</a>
+          </li>
+          {%endfor%}
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+        <h3 class="footer-titel">Legislação</h3>
+        <ul class="footer-link">
+          <li><a href="#">Código de Ética Prof. do Psicólogo</a></li>
+          <li><a href="#">Resolução CFP n° 11/2018</a></li>
+          <li><a href="#">Conselho Federal de Psicologia</a></li>
+          <li><a href="#">Conselho Reg. de Psicologia - SP</a></li>
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div id="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright-content">
+            <p>Copyright © 2020 <a rel="nofollow" href="">DoctorWeb</a> All Right Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+{% endblock %}
